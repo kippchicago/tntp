@@ -1,0 +1,12 @@
+name: tntp_teacher_insight
+title: TNTP Teacher Insight
+username: chrishaid
+account: chrishaid
+server: idea2.kippchicago.org
+hostUrl: https://idea2.kippchicago.org/__api__
+appId: 43
+bundleId: 189
+url: https://idea2.kippchicago.org/content/43/
+when: 1560981887.48236
+asMultiple: FALSE
+asStatic: FALSE
