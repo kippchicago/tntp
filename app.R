@@ -41,7 +41,6 @@ items <- items %>% mutate(clean_question = str_trim(str_remove_all(clean_questio
                                                  "Academic Opportunity",
                                                  domain_group))
 
-
 domains <- get_tntp("domains") %>% collect
 domains_bm <- get_tntp("domains_benchmarks") %>% collect
 
@@ -103,6 +102,7 @@ domains_order <- c("Instructional Culture Index",
                    "Learning Environment",
                    "Instructional Planning for Student Growth",
                    "Observation & Feedback",
+                   "Observation and Feedback",
                    "Professional Development",
                    "Evaluation",
                    "Peer Culture",
@@ -245,7 +245,7 @@ ui <- dashboardPage(
                             plotOutput("kanberg_items") %>% withSpinner()
                         ) #end Kanberg Box
                     )# end fluidRow
-                ) #end tabItem kanberg
+                )
         ) # endTabItems
     ) # end dashboardBody
 ) # end dashboardPage 
